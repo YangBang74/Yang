@@ -6,15 +6,19 @@
       <h1 class="text-center color-brand-2 text-7xl secont-font">Developer</h1>
       <div class="flex justify-center">
         <div
-          class="flex gap-x-6 gap-y-8 justify-center items-center py-12 flex-nowrap ld:flex-nowrap flex-wrap"
+          class="flex gap-x-6 gap-y-8 justify-center items-center py-12 lg:flex-nowrap ld:flex-nowrap flex-wrap"
         >
           <div
             class="shadow-[ -4px_-4px_2px_0_#12f7d6 ] min-w-[300px] border-2 border-white rounded-[20%_0_20%_0] h-[475px] p-[24px]"
           >
             <div class="bio__items flex flex-col content-between">
               <div class="bio__profile flex flex-col items-center text-center gap-2">
-                <div class="bio__profile-image">
-                  <img src="/img/Profile photo.png" alt="Profile photo" />
+                <div class="bio__profile-image rounded-full">
+                  <img
+                    src="/Profile photo.png"
+                    alt="Profile photo"
+                    class="rounded-full h-26 w-26"
+                  />
                 </div>
                 <div class="bio__profile-name">
                   <h3 class="text-3xl text-medium ibm">Yan</h3>
@@ -38,7 +42,7 @@
                       fill="currentColor"
                     />
                   </svg>
-                  <a href="mailto:crowbeat.47@gmail.com">crowbeat.47@gmail.com</a>
+                  <a href="mailto:yangproger@gmail.com">yangproger@gmail.com</a>
                 </div>
                 <div class="flex gap-2 items-center">
                   <svg
@@ -117,8 +121,10 @@
                   >
                 </div>
               </div>
-              <button class="bio__button bg-white rounded-3xl py-4 px-8 mt-auto">
-                <a href="#" class="text-[#292F36] text-xl ubuntu flex gap-3 justify-center"
+              <button
+                class="bio__button bg-white text-black rounded-3xl py-4 px-8 mt-auto hover:bg-black hover:text-white transition"
+              >
+                <a href="#" class="text-xl secont-font flex gap-3 justify-center"
                   >Download CV
                   <svg
                     width="24"
@@ -143,9 +149,9 @@
           <div
             class="flex justify-center md:justify-between md:flex-nowrap flex-wrap gap-x-6 gap-y-8"
           >
-            <div class="hero__title md:w-full w-[80%]">
+            <div class="hero__title md:w-[80%] w-full">
               <p class="color-brand-2">&lth1&gt;</p>
-              <h1 class="px-8 lg:text-[64px] md:text-5xl text-4xl ubuntu text-medium">
+              <h1 class="px-8 lg:text-[64px] md:text-5xl text-4xl secont-font text-medium">
                 Hey<br />I'm<span class="color-brand"> Yan</span>,<br />
                 <span class="flex justify-between"
                   >Fronted Developer
@@ -205,7 +211,7 @@
       >
         <div class="lg:w-[60%] z-10 w-full">
           <h1
-            class="ubuntu lg:text-6xl md:text-5xl text-4xl bg-[#292F36] border border-[4px] border-[#12F7D6] py-4 px-10 inline leading-base z-10 text-nowrap"
+            class="secont-font lg:text-6xl md:text-5xl text-4xl bg-[#292F36] border-4 border-[#12F7D6] py-4 px-10 inline leading-base z-10 text-nowrap"
             style="border-radius: 50px 0 50px 0"
           >
             About Me
@@ -235,7 +241,7 @@
           </div>
         </div>
         <div class="about-img w-30% z-50 hidden md:block">
-          <img src="/img/Image.png" alt="Developer" class="w-full" loading="lazzy" />
+          <img src="/Image.png" alt="Developer" class="w-full" loading="lazzy" />
         </div>
       </div>
     </div>
@@ -244,14 +250,14 @@
     <div class="container">
       <div class="py-10 lg:py-44 md:py-24 mx-auto">
         <div class="flex flex-col items-center gap-3 z-10 w-full">
-          <h1 class="color-brand text-[64px] ubuntu">Skills</h1>
+          <h1 class="color-brand text-[64px] secont-font">Skills</h1>
           <span class="skills-title bg-[#12F7D6] w-40 block"></span>
           <p class="text-base mt-3 text-center">
             I am striving to never stop learning and improving
           </p>
         </div>
         <div
-          class="py-6 px-14 bg-[#98FAEC] block flex flex-col items-center w-[300px] mx-auto whitespace-nowrap rounded-2xl mt-12 skills__block-web"
+          class="py-6 px-14 bg-[#98FAEC] flex flex-col items-center w-[300px] mx-auto whitespace-nowrap rounded-2xl mt-12 skills__block-web"
         >
           <svg
             width="32"
@@ -403,7 +409,7 @@
 
 .about:before {
   content: '';
-  background: url('/img/about-bg.jpg') no-repeat center/cover;
+  background: url('/about-bg.jpg') no-repeat center/cover;
   opacity: 0.2;
   position: absolute;
   z-index: 0;
@@ -421,7 +427,7 @@
 
 .skills:before {
   content: '';
-  background: url('/img/skills-bg.jpg') no-repeat center/cover;
+  background: url('/skills-bg.jpg') no-repeat center/cover;
   opacity: 0.2;
   position: absolute;
   z-index: -1;
