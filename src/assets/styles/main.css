@@ -17,7 +17,7 @@ body {
 
 .background-base {
   background-color: #292f3690;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(7px);
 }
 
 .base-font {
