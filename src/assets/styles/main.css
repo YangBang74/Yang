@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+.container {
+  margin-inline: auto;
+  width: 100%;
+  z-index: 10;
+  padding: 0 100px;
+}
+
+body {
+  background-color: #292f36;
+  color: #ececec;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.background-base {
+  background-color: #292f3690;
+  backdrop-filter: blur(3px);
+}
+
+.base-font {
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.secont-font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header-b-color {
+  border-color: #43454d;
+}
+
+.color-brand,
+.active {
+  color: #12f7d6;
+}
+
+.hover-link a:hover {
+  color: #12f7d6;
+}
+
+button,
+a {
+  transition: 0.2s;
+}
+
+@media (max-width: 1247px) {
+  .hero__items {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 50px;
+  }
+  .header__contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 20px;
+  }
+}
