@@ -64,11 +64,10 @@ Yang/
 ├─ src/
 │ ├─ assets/ # Изображения, иконки, шрифты
 │ ├─ components/ # Vue-компоненты
-│ ├─ composables/ # Повторно используемые хуки (Composition API)
 │ ├─ views/ # Страницы сайта
 │ ├─ App.vue # Корневой компонент
+| ├─ Api # Работа с api
 │ └─ main.js # Точка входа
-├─ .env.example # Пример переменных окружения
 ├─ index.html # HTML-шаблон для Vite
 ├─ package.json
 ├─ vite.config.js
