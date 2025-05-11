@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://yangbang74.github.io/Yang/sitemap.xml
