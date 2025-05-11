@@ -25,6 +25,7 @@
     "hero-hey": "Привет<br />Я<span class=\"color-brand\"> Ян</span>,<br /> <span class=\"flex justify-between\">Frontend разработчик<span class=\"color-brand-2 text-base self-end\">&lt/h1&gt;</span></span>",
     "hero-text": "Я помогаю бизнесу расти, создавая потрясающие веб-приложения. Если вы ищете разработчика, который любит доводить дело до конца",
     "hero-talk": "Давайте поговорим",
+    "about-hi": "Привет!",
     "hero-lang": "Языки программирования",
     "hero-tools": "Инструменты разработки",
     "hero-year": "Год опыта",

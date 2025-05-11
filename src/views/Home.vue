@@ -3,7 +3,9 @@
 <template>
   <section class="py-10">
     <div class="container">
-      <h1 class="text-center color-brand-2 text-7xl secont-font">{{ $t('home.hero-title') }}</h1>
+      <h1 class="text-center color-brand-2 md:text-7xl text-5xl secont-font">
+        {{ $t('home.hero-title') }}
+      </h1>
       <div class="flex justify-center">
         <div
           class="flex gap-x-6 gap-y-8 justify-center items-center py-12 lg:flex-nowrap ld:flex-nowrap flex-wrap"
@@ -152,7 +154,7 @@
             <div class="hero__title md:w-[80%] w-full">
               <p class="color-brand-2">&lth1&gt;</p>
               <h1
-                class="px-8 lg:text-[64px] md:text-5xl text-4xl secont-font text-medium"
+                class="px-8 lg:text-4xl text-3xl secont-font text-medium"
                 v-html="$t('home.hero-hey')"
               ></h1>
               <p class="color-brand-2">&ltp&gt;</p>
@@ -215,9 +217,9 @@
           >
             {{ $t('home.about-title') }}
           </h1>
-          <div class="bg-[#292F36] py-6 px-12 rounded-2xl mt-16">
+          <div class="bg-[#292F36] py-6 md:px-12 px-6 rounded-2xl mt-16">
             <p class="color-brand-2">&ltp&gt;</p>
-            <h2 class="color-brand text-4xl">Hello!</h2>
+            <h2 class="color-brand text-4xl">{{ $t('home.about-hi') }}</h2>
             <p v-html="$t('home.about-text')"></p>
             <p class="color-brand-2">&lt/p&gt;</p>
           </div>

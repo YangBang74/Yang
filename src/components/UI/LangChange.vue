@@ -20,7 +20,7 @@ function changeLanguage(lang) {
       <svg
         fill="currentColor"
         height="15px"
-        width="15spx"
+        width="15px"
         viewBox="0 0 330 330"
         class="ml-1 mt-0.5 w-full"
         :style="{ transform: subMenu ? 'rotate(180deg)' : 'rotate(0deg)' }"

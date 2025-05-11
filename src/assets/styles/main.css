@@ -5,7 +5,6 @@
   margin-inline: auto;
   width: 100%;
   z-index: 10;
-  padding: 0 100px;
 }
 
 body {
@@ -56,9 +55,6 @@ a {
 }
 
 @media (max-width: 1023px) {
-  .container {
-    padding: 0 50px;
-  }
 }
 
 @media (max-width: 769px) {
