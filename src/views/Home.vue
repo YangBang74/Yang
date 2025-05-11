@@ -3,7 +3,7 @@
 <template>
   <section class="py-10">
     <div class="container">
-      <h1 class="text-center color-brand-2 text-7xl secont-font">Developer</h1>
+      <h1 class="text-center color-brand-2 text-7xl secont-font">{{ $t('home.hero-title') }}</h1>
       <div class="flex justify-center">
         <div
           class="flex gap-x-6 gap-y-8 justify-center items-center py-12 lg:flex-nowrap ld:flex-nowrap flex-wrap"
@@ -21,8 +21,8 @@
                   />
                 </div>
                 <div class="bio__profile-name">
-                  <h3 class="text-3xl text-medium ibm">Yan</h3>
-                  <p class="text-[14x]">Frontend developer</p>
+                  <h3 class="text-3xl text-medium ibm">{{ $t('home.bio-name') }}</h3>
+                  <p class="text-[14x]">{{ $t('home.bio-prof') }}</p>
                 </div>
               </div>
               <div class="bio__info flex flex-col gap-3 py-4 text-[14px] pl-2">
@@ -66,7 +66,7 @@
                       fill="currentColor"
                     />
                   </svg>
-                  <span>Turkmenistan</span>
+                  <span>{{ $t('home.bio-con') }}</span>
                 </div>
                 <div class="flex gap-2 items-center">
                   <svg
@@ -84,7 +84,7 @@
                       fill="#12F7D6"
                     />
                   </svg>
-                  <span>Full time / Freelancer</span>
+                  <span>{{ $t('home.bio-job') }}</span>
                 </div>
                 <div class="flex gap-2 items-center">
                   <svg
@@ -104,7 +104,7 @@
                       fill="currentColor"
                     />
                   </svg>
-                  <a href="https://t.me/itisyang">Write me on Telegram</a>
+                  <a href="https://t.me/itisyang">{{ $t('home.bio-write') }}</a>
                 </div>
                 <div class="flex gap-2">
                   <span class="py-[1px] px-2 bg-[#12F7D6] text-[#292F36] text-[14px] rounded-lg"
@@ -125,7 +125,7 @@
                 class="bio__button bg-white text-black rounded-3xl py-4 px-8 mt-auto hover:bg-black hover:text-white transition"
               >
                 <a href="#" class="text-xl secont-font flex gap-3 justify-center"
-                  >Download CV
+                  >{{ $t('home.bio-cv') }}
                   <svg
                     width="24"
                     height="24"
@@ -151,21 +151,17 @@
           >
             <div class="hero__title md:w-[80%] w-full">
               <p class="color-brand-2">&lth1&gt;</p>
-              <h1 class="px-8 lg:text-[64px] md:text-5xl text-4xl secont-font text-medium">
-                Hey<br />I'm<span class="color-brand"> Yan</span>,<br />
-                <span class="flex justify-between"
-                  >Fronted Developer
-                  <span class="color-brand-2 text-base self-end">&lt/h1&gt;</span></span
-                >
-              </h1>
+              <h1
+                class="px-8 lg:text-[64px] md:text-5xl text-4xl secont-font text-medium"
+                v-html="$t('home.hero-hey')"
+              ></h1>
               <p class="color-brand-2">&ltp&gt;</p>
               <p class="pl-8 text-base">
-                I help business grow by crafting amazing web experiences. If you’re looking for a
-                developer that likes to get stuff done,
+                {{ $t('home.hero-text') }}
               </p>
               <p class="color-brand-2">&lt/p&gt;</p>
               <a href="#" class="color-brand pl-8 text-[32px] text-medium flex gap-3 items-center"
-                >Let’s Talk
+                >{{ $t('home.hero-talk') }}
                 <svg
                   class="color-brand p-2 bg-[#43454D] rounded-full"
                   width="40"
@@ -187,16 +183,16 @@
               class="hero__static px-10 py-12 bg-[#1A1E23] rounded-[80px] self-center h-[400px] w-[290px] flex flex-col justify-between"
             >
               <div class="col flex justify-start gap-4 items-center">
-                <span class="color-brand text-[48px] text-medium">4</span>
-                <span class="text-base">Programming Languages</span>
+                <span class="color-brand text-[48px] text-medium">2</span>
+                <span class="text-base">{{ $t('home.hero-lang') }}</span>
               </div>
               <div class="col flex justify-start gap-4 items-center">
                 <span class="color-brand text-[48px] text-medium">6</span>
-                <span class="text-base">Development Tools</span>
+                <span class="text-base">{{ $t('home.hero-tools') }}</span>
               </div>
               <div class="col flex justify-start gap-4 items-center">
                 <span class="color-brand text-[48px] text-medium">2</span>
-                <span class="text-base">Years of Experiences</span>
+                <span class="text-base">{{ $t('home.hero-year') }}</span>
               </div>
             </div>
           </div>
@@ -214,29 +210,12 @@
             class="secont-font lg:text-6xl md:text-5xl text-4xl bg-[#292F36] border-4 border-[#12F7D6] py-4 px-10 inline leading-base z-10 text-nowrap"
             style="border-radius: 50px 0 50px 0"
           >
-            About Me
+            {{ $t('home.about-title') }}
           </h1>
           <div class="bg-[#292F36] py-6 px-12 rounded-2xl mt-16">
             <p class="color-brand-2">&ltp&gt;</p>
             <h2 class="color-brand text-4xl">Hello!</h2>
-            <p>
-              My name is Yang and I specialize in web developement that utilizes
-              <span class="color-brand">HTML</span>, <span class="color-brand">CSS</span>,
-              <span class="color-brand">JS</span>, and <span class="color-brand">VUE</span> etc.
-              <br />
-            </p>
-            <p>
-              I am a highly motivated individual and eternal optimist dedicated to writing clear,
-              concise, robust code that works. Striving to never stop learning and improving.
-            </p>
-            <p>
-              When I'm not coding, I am writing bolgs, reading, or picking up some new hands-on art
-              project like photography.
-            </p>
-            <p>
-              I like to have my perspective and belief systems challenged so that I see the world
-              through new eyes.
-            </p>
+            <p v-html="$t('home.about-text')"></p>
             <p class="color-brand-2">&lt/p&gt;</p>
           </div>
         </div>
@@ -250,10 +229,10 @@
     <div class="container">
       <div class="py-10 lg:py-44 md:py-24 mx-auto">
         <div class="flex flex-col items-center gap-3 z-10 w-full">
-          <h1 class="color-brand text-[64px] secont-font">Skills</h1>
+          <h1 class="color-brand text-[64px] secont-font">{{ $t('home.skills') }}</h1>
           <span class="skills-title bg-[#12F7D6] w-40 block"></span>
           <p class="text-base mt-3 text-center">
-            I am striving to never stop learning and improving
+            {{ $t('home.skills-sub') }}
           </p>
         </div>
         <div
@@ -273,7 +252,7 @@
               fill="#292F36"
             />
           </svg>
-          <h5 class="text-[#292F36] text-[24px]">Web Development</h5>
+          <h5 class="text-[#292F36] text-[24px]">{{ $t('home.skills-job') }}</h5>
           <div class="skills-web text-[#43454D] flex gap-1 items-center">
             HTML
             <span class="w-1 h-1 bg-current block rounded-3xl"></span> CSS

@@ -37,6 +37,9 @@ body {
   color: #12f7d6;
 }
 
+.hover:hover {
+  color: #12f7d6;
+}
 .hover-link a:hover {
   color: #12f7d6;
 }
@@ -55,9 +58,6 @@ a {
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
-  }
-  .header__contacts {
-    display: none;
   }
 }
 

@@ -2,7 +2,9 @@
 import PageLoader from '@/components/UI/PageLoader.vue'
 import { ref, onMounted } from 'vue'
 import { getBlogs } from '@/api/getBlogs'
+import { useI18n } from 'vue-i18n'
 
+const { locale } = useI18n()
 const blogs = ref([])
 const loader = ref(false)
 const activeBlogIds = ref([])
@@ -33,12 +35,12 @@ const isActive = (key) => activeBlogIds.value.includes(key)
 </script>
 
 <template>
-  <section>
+  <section class="mt-5 mb-20">
     <div class="container">
       <PageLoader v-if="loader" />
       <div v-else>
         <div v-if="blogs.length" class="flex flex-col">
-          <h1 class="font-bold text-5xl text-center my-6">Blogs</h1>
+          <h1 class="font-bold text-5xl text-center my-6">{{ $t('blogs') }}</h1>
           <div
             v-for="blog in blogs"
             :key="blog.key"
@@ -57,13 +59,25 @@ const isActive = (key) => activeBlogIds.value.includes(key)
             <h2
               class="font-bold md:text-2xl text-lg my-5 md:whitespace-normal overflow-hidden text-ellipsis whitespace-nowrap"
             >
-              {{ blog.titleEn }}
+              <span v-if="locale === 'en'">
+                {{ blog.titleEn }}
+              </span>
+              <span v-if="locale === 'ru'">
+                {{ blog.titleRu }}
+              </span>
             </h2>
-            <p>{{ blog.textEn }}</p>
+            <p class="text-lg">
+              <span v-if="locale === 'en'">
+                {{ blog.textEn }}
+              </span>
+              <span v-if="locale === 'ru'">
+                {{ blog.textRu }}
+              </span>
+            </p>
           </div>
         </div>
         <div class="min-h-[100vh] h-full justify-start text-center" v-else>
-          <p class="text-red m-auto mt-12">Упс... Обновите страницу</p>
+          <p class="text-red m-auto mt-12">{{ $t('ups') }}</p>
           <div>
             <img src="/ups.gif" alt="cutty cat" class="mx-auto" />
           </div>

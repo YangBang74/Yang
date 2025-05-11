@@ -2,7 +2,9 @@
 import { getProjects } from '@/api/getProjects'
 import { ref, onMounted } from 'vue'
 import PageLoader from '@/components/UI/PageLoader.vue'
+import { useI18n } from 'vue-i18n'
 
+const { locale } = useI18n()
 const projects = ref([])
 const loader = ref(false)
 
@@ -23,9 +25,9 @@ onMounted(fetchProjects)
 
 <template>
   <PageLoader v-if="loader" />
-  <section v-else class="my-8">
+  <section v-else class="mt-5 mb-20">
     <div v-if="projects.length" class="container">
-      <h1 class="font-bold text-4xl text-center my-5">Protfolio - my projects</h1>
+      <h1 class="font-bold text-4xl text-center my-6">{{ $t('portfolio') }}</h1>
       <div class="flex flex-wrap justify-evenly items-center gap-5">
         <div
           v-for="project in projects"
@@ -37,13 +39,20 @@ onMounted(fetchProjects)
           </div>
           <div class="w-full">
             <h2 class="secont-font font-bold">{{ project.title }}</h2>
-            <p>{{ project.aboutEn }}</p>
+            <p>
+              <span v-if="locale === 'en'">
+                {{ project.aboutEn }}
+              </span>
+              <span v-if="locale === 'ru'">
+                {{ project.aboutRu }}
+              </span>
+            </p>
           </div>
         </div>
       </div>
     </div>
     <div class="min-h-[100vh] h-full justify-start text-center" v-else>
-      <p class="text-red m-auto mt-12">Упс... Обновите страницу</p>
+      <p class="text-red m-auto mt-12">{{ $t('home.ups') }}</p>
       <div>
         <img src="/ups.gif" alt="cutty cat" class="mx-auto" />
       </div>
