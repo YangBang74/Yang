@@ -48,6 +48,10 @@ a {
   transition: 0.2s;
 }
 
+.color-brand-2 {
+  color: #12f7d6;
+}
+
 @media (max-width: 1247px) {
   .hero__items {
     flex-wrap: wrap;
