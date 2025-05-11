@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url('...fonts/Ubuntu-Medium.woff2') format('woff2');
+  src: url('../fonts/Ubuntu-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;

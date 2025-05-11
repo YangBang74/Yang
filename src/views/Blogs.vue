@@ -44,11 +44,11 @@ const isActive = (key) => activeBlogIds.value.includes(key)
           <div
             v-for="blog in blogs"
             :key="blog.key"
-            class="blog my-5 p-6 bg-white text-black rounded-3xl overflow-hidden transition-all duration-300 ease-in-out cursor-pointer"
+            class="blog my-5 md:p-6 p-4 bg-white text-black rounded-3xl overflow-hidden transition-all duration-300 ease-in-out cursor-pointer"
             @click="toggleBlog(blog.key)"
             :class="{
-              'max-h-[2000px]': isActive(blog.key),
-              'md:max-h-[500px] max-h-[490px]': !isActive(blog.key),
+              'max-h-[10000px]': isActive(blog.key),
+              'md:max-h-[500px] max-h-[480px]': !isActive(blog.key),
             }"
           >
             <img
@@ -66,7 +66,7 @@ const isActive = (key) => activeBlogIds.value.includes(key)
                 {{ blog.titleRu }}
               </span>
             </h2>
-            <p class="text-lg">
+            <p class="text-lg pb-1">
               <span v-if="locale === 'en'">
                 {{ blog.textEn }}
               </span>

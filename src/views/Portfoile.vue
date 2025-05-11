@@ -32,10 +32,14 @@ onMounted(fetchProjects)
         <div
           v-for="project in projects"
           :key="project.id"
-          class="p-3 bg-white text-black flex gap-2.5 rounded-lg"
+          class="p-3 bg-white text-black flex gap-2.5 rounded-lg md:flex-row flex-col"
         >
-          <div class="w-80">
-            <img :src="project.img" :alt="project.title" class="w-full object-cover h-40" />
+          <div class="md:w-80 w-full">
+            <img
+              :src="project.img"
+              :alt="project.title"
+              class="w-full object-contain md:h-40 h-80 object-0"
+            />
           </div>
           <div class="w-full">
             <h2 class="secont-font font-bold text-2xl">{{ project.title }}</h2>
@@ -59,3 +63,9 @@ onMounted(fetchProjects)
     </div>
   </section>
 </template>
+<style>
+img {
+  object-fit: cover;
+  object-position: start;
+}
+</style>

@@ -1,15 +1,16 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref, watch } from 'vue'
 import LangChange from './UI/LangChange.vue'
 
-const { locale } = useI18n()
 const menuIsActive = ref(false)
 
-function changeLanguage(lang) {
-  locale.value = lang
-  localStorage.setItem('locale', lang)
+watch(menuIsActive, (newVal) => {
+  document.body.style.overflow = newVal ? 'hidden' : 'auto'
+})
+
+const closeMenu = () => {
+  menuIsActive.value = false
 }
 </script>
 
@@ -21,9 +22,9 @@ function changeLanguage(lang) {
           <router-link to="/"><span class="color-brand">&lt/&gt;</span>Yan</router-link>
         </div>
         <nav class="menu flex md:relative md:gap-10" :class="{ active: menuIsActive }">
-          <router-link to="/">Home</router-link>
-          <router-link to="/blogs">Blogs</router-link>
-          <router-link to="/portfolio">Portfolio</router-link>
+          <router-link to="/" @click="closeMenu()">Home</router-link>
+          <router-link to="/blogs" @click="closeMenu()">Blogs</router-link>
+          <router-link to="/portfolio" @click="closeMenu()">Portfolio</router-link>
         </nav>
         <div class="flex items-center gap-4">
           <nav class="flex items-center gap-4">
@@ -197,10 +198,11 @@ function changeLanguage(lang) {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     width: 80%;
     right: -1000%;
-    height: 100vh;
+    height: 1000vh;
+    font-weight: 500;
     top: 0;
     color: black;
     transition: 0.4s;
