@@ -23,7 +23,7 @@
                   />
                 </div>
                 <div class="bio__profile-name">
-                  <h3 class="text-3xl text-medium ibm">{{ $t('home.bio-name') }}</h3>
+                  <p class="text-3xl text-medium ibm">{{ $t('home.bio-name') }}</p>
                   <p class="text-[14x]">{{ $t('home.bio-prof') }}</p>
                 </div>
               </div>
@@ -257,7 +257,7 @@
               fill="#292F36"
             />
           </svg>
-          <h5 class="text-[#292F36] text-[24px]">{{ $t('home.skills-job') }}</h5>
+          <h2 class="text-[#292F36] text-[24px]">{{ $t('home.skills-job') }}</h2>
           <div class="skills-web text-[#43454D] flex gap-1 items-center">
             HTML
             <span class="w-1 h-1 bg-current block rounded-3xl"></span> CSS
