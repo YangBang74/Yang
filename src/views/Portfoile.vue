@@ -32,14 +32,14 @@ onMounted(fetchProjects)
         <div
           v-for="project in projects"
           :key="project.id"
-          class="p-2 bg-white text-black flex gap-2.5 rounded-lg"
+          class="p-3 bg-white text-black flex gap-2.5 rounded-lg"
         >
           <div class="w-80">
             <img :src="project.img" :alt="project.title" class="w-full object-cover h-40" />
           </div>
           <div class="w-full">
-            <h2 class="secont-font font-bold">{{ project.title }}</h2>
-            <p>
+            <h2 class="secont-font font-bold text-2xl">{{ project.title }}</h2>
+            <p class="text-lg">
               <span v-if="locale === 'en'">
                 {{ project.aboutEn }}
               </span>
