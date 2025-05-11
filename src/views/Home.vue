@@ -124,7 +124,7 @@
               <button
                 class="bio__button bg-white text-black rounded-3xl py-4 px-8 mt-auto hover:bg-black hover:text-white transition"
               >
-                <a href="#" class="text-xl secont-font flex gap-3 justify-center"
+                <a href="/Yan.pdf" download class="text-xl secont-font flex gap-3 justify-center"
                   >{{ $t('home.bio-cv') }}
                   <svg
                     width="24"
@@ -160,7 +160,10 @@
                 {{ $t('home.hero-text') }}
               </p>
               <p class="color-brand-2">&lt/p&gt;</p>
-              <a href="#" class="color-brand pl-8 text-[32px] text-medium flex gap-3 items-center"
+              <a
+                href="https://t.me/itisyang"
+                target="_blank"
+                class="color-brand pl-8 text-[32px] text-medium flex gap-3 items-center"
                 >{{ $t('home.hero-talk') }}
                 <svg
                   class="color-brand p-2 bg-[#43454D] rounded-full"
