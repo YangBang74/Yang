@@ -1,10 +1,9 @@
 <script setup>
 import PageLoader from '@/components/UI/PageLoader.vue'
 import { ref, onMounted } from 'vue'
-import { getBlogs } from '@/getBlogs'
+import { getBlogs } from '@/api/getBlogs'
 
 const blogs = ref([])
-const isError = ref(false)
 const loader = ref(false)
 const activeBlogIds = ref([])
 
@@ -14,7 +13,6 @@ const fetchBlogs = async () => {
     blogs.value = await getBlogs()
     blogs.value.reverse()
   } catch (err) {
-    isError.value = true
     console.error('Ошибка при загрузке блогов:', err)
   } finally {
     loader.value = false
