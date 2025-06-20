@@ -85,7 +85,7 @@ const closeMenu = () => {
 </template>
 <style scoped>
 .burger {
-  padding: 5px 0;
+  padding: 0.3125rem 0;
   display: none;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -108,23 +108,23 @@ const closeMenu = () => {
 }
 
 .burger-box {
-  width: 40px;
-  height: 24px;
+  width: 2.5rem;
+  height: 1.5rem;
   position: relative;
 }
 
 .burger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -0.125rem;
 }
 .burger-inner,
 .burger-inner::before,
 .burger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 1.875rem;
+  height: 0.25rem;
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
@@ -136,10 +136,10 @@ const closeMenu = () => {
   display: block;
 }
 .burger-inner::before {
-  top: -10px;
+  top: -0.625rem;
 }
 .burger-inner::after {
-  bottom: -10px;
+  bottom: -0.625rem;
 }
 
 .hamburger--emphatic {
@@ -156,7 +156,7 @@ const closeMenu = () => {
     left 0.125s 0.175s ease-in;
 }
 .hamburger--emphatic .burger-inner::after {
-  top: 10px;
+  top: 0.625rem;
   right: 0;
   transition:
     transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
@@ -169,35 +169,35 @@ const closeMenu = () => {
   background-color: transparent !important;
 }
 .hamburger--emphatic.active .burger-inner::before {
-  left: -80px;
-  top: -80px;
-  transform: translate3d(80px, 80px, 0) rotate(45deg);
+  left: -5rem;
+  top: -5rem;
+  transform: translate3d(5rem, 5rem, 0) rotate(45deg);
   transition:
     left 0.125s ease-out,
     top 0.05s 0.125s linear,
     transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .hamburger--emphatic.active .burger-inner::after {
-  right: -80px;
-  top: -80px;
-  transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+  right: -5rem;
+  top: -5rem;
+  transform: translate3d(-5rem, 5rem, 0) rotate(-45deg);
   transition:
     right 0.125s ease-out,
     top 0.05s 0.125s linear,
     transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .burger {
     display: block;
   }
   .menu {
     position: absolute;
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 32px;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
     background-color: rgba(255, 255, 255, 0.95);
     width: 80%;
     right: -1000%;

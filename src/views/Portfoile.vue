@@ -38,7 +38,7 @@ onMounted(fetchProjects)
             <img
               :src="project.img"
               :alt="project.title"
-              class="w-full object-contain md:h-40 h-80 object-0"
+              class="w-full object-cover md:h-40 h-80 object-0"
             />
           </div>
           <div class="w-full">

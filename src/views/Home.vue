@@ -11,7 +11,7 @@
           class="flex gap-x-6 gap-y-8 justify-center items-center py-12 lg:flex-nowrap ld:flex-nowrap flex-wrap"
         >
           <div
-            class="shadow-[ -4px_-4px_2px_0_#12f7d6 ] min-w-[300px] border-2 border-white rounded-[20%_0_20%_0] h-[475px] p-[24px]"
+            class="shadow-[ -0.25rem_-0.25rem_0.125rem_0_#12f7d6 ] min-w-[18.75rem] border-3 shadow-lg shadow-[#12f7d6]/20 border-white rounded-[20%_0_20%_0] h-[29.6875rem] p-[1.5rem]"
           >
             <div class="bio__items flex flex-col content-between">
               <div class="bio__profile flex flex-col items-center text-center gap-2">
@@ -27,7 +27,7 @@
                   <p class="text-[14x]">{{ $t('home.bio-prof') }}</p>
                 </div>
               </div>
-              <div class="bio__info flex flex-col gap-3 py-4 text-[14px] pl-2">
+              <div class="bio__info flex flex-col gap-3 py-4 text-[0.875rem] pl-2">
                 <div class="flex gap-2 items-center">
                   <svg
                     class="color-brand"
@@ -109,16 +109,20 @@
                   <a href="https://t.me/itisyang">{{ $t('home.bio-write') }}</a>
                 </div>
                 <div class="flex gap-2">
-                  <span class="py-[1px] px-2 bg-[#12F7D6] text-[#292F36] text-[14px] rounded-lg"
+                  <span
+                    class="py-[0.0625rem] px-2 bg-[#12F7D6] text-[#292F36] text-[0.875rem] rounded-lg"
                     >HTML</span
                   >
-                  <span class="py-[1px] px-2 bg-[#12F7D6] text-[#292F36] text-[14px] rounded-lg"
+                  <span
+                    class="py-[0.0625rem] px-2 bg-[#12F7D6] text-[#292F36] text-[0.875rem] rounded-lg"
                     >CSS</span
                   >
-                  <span class="py-[1px] px-2 bg-[#12F7D6] text-[#292F36] text-[14px] rounded-lg"
+                  <span
+                    class="py-[0.0625rem] px-2 bg-[#12F7D6] text-[#292F36] text-[0.875rem] rounded-lg"
                     >JS</span
                   >
-                  <span class="py-[1px] px-2 bg-[#12F7D6] text-[#292F36] text-[14px] rounded-lg"
+                  <span
+                    class="py-[0.0625rem] px-2 bg-[#12F7D6] text-[#292F36] text-[0.875rem] rounded-lg"
                     >VUE</span
                   >
                 </div>
@@ -164,7 +168,7 @@
               <a
                 href="https://t.me/itisyang"
                 target="_blank"
-                class="color-brand pl-8 text-[32px] text-medium flex gap-3 items-center"
+                class="color-brand pl-8 text-[2rem] text-medium flex gap-3 items-center"
                 >{{ $t('home.hero-talk') }}
                 <svg
                   class="color-brand p-2 bg-[#43454D] rounded-full"
@@ -184,18 +188,18 @@
               </a>
             </div>
             <div
-              class="hero__static px-10 py-12 bg-[#1A1E23] rounded-[80px] self-center h-[400px] w-[290px] flex flex-col justify-between"
+              class="hero__static px-10 py-12 bg-[#1A1E23] rounded-4xl self-center h-[25rem] w-[18.125rem] flex flex-col justify-between"
             >
               <div class="col flex justify-start gap-4 items-center">
-                <span class="color-brand text-[48px] text-medium">2</span>
+                <span class="color-brand text-[3rem] text-medium">2</span>
                 <span class="text-base">{{ $t('home.hero-lang') }}</span>
               </div>
               <div class="col flex justify-start gap-4 items-center">
-                <span class="color-brand text-[48px] text-medium">6</span>
+                <span class="color-brand text-[3rem] text-medium">6</span>
                 <span class="text-base">{{ $t('home.hero-tools') }}</span>
               </div>
               <div class="col flex justify-start gap-4 items-center">
-                <span class="color-brand text-[48px] text-medium">2</span>
+                <span class="color-brand text-[3rem] text-medium">3</span>
                 <span class="text-base">{{ $t('home.hero-year') }}</span>
               </div>
             </div>
@@ -212,7 +216,7 @@
         <div class="lg:w-[60%] z-10 w-full">
           <h1
             class="secont-font lg:text-6xl md:text-5xl text-4xl bg-[#292F36] border-4 border-[#12F7D6] py-4 px-10 inline leading-base z-10 text-nowrap"
-            style="border-radius: 50px 0 50px 0"
+            style="border-radius: 3.125rem 0 3.125rem 0"
           >
             {{ $t('home.about-title') }}
           </h1>
@@ -233,14 +237,14 @@
     <div class="container">
       <div class="py-10 lg:py-44 md:py-24 mx-auto">
         <div class="flex flex-col items-center gap-3 z-10 w-full">
-          <h1 class="color-brand text-[64px] secont-font">{{ $t('home.skills') }}</h1>
+          <h1 class="color-brand text-[4rem] secont-font">{{ $t('home.skills') }}</h1>
           <span class="skills-title bg-[#12F7D6] w-40 block"></span>
           <p class="text-base mt-3 text-center">
             {{ $t('home.skills-sub') }}
           </p>
         </div>
         <div
-          class="py-6 px-14 bg-[#98FAEC] flex flex-col items-center w-[300px] mx-auto whitespace-nowrap rounded-2xl mt-12 skills__block-web"
+          class="py-6 px-14 bg-[#98FAEC] flex flex-col items-center w-[18.75rem] mx-auto whitespace-nowrap rounded-2xl mt-12 skills__block-web"
         >
           <svg
             width="32"
@@ -256,18 +260,20 @@
               fill="#292F36"
             />
           </svg>
-          <h2 class="text-[#292F36] text-[24px]">{{ $t('home.skills-job') }}</h2>
+          <h2 class="text-[#292F36] text-[1.5rem]">{{ $t('home.skills-job') }}</h2>
           <div class="skills-web text-[#43454D] flex gap-1 items-center">
             HTML
             <span class="w-1 h-1 bg-current block rounded-3xl"></span> CSS
             <span class="w-1 h-1 bg-current block rounded-3xl"></span> JS
+            <span class="w-1 h-1 bg-current block rounded-3xl"></span> TS
             <span class="w-1 h-1 bg-current block rounded-3xl"></span> VUE
+            <span class="w-1 h-1 bg-current block rounded-3xl"></span> NUXT
           </div>
         </div>
         <div class="flex justify-center items-center gap-20 mt-16 flex-wrap">
           <div class="flex flex-col items-center gap-2">
             <div
-              class="w-[100px] h-[100px] flex justify-center pt-1.5 items-center rounded-full bg-[#E54F26]"
+              class="w-[6.25rem] h-[6.25rem] flex justify-center pt-1.5 items-center rounded-full bg-[#E54F26]"
             >
               <svg
                 width="64"
@@ -286,7 +292,7 @@
           </div>
           <div class="flex flex-col items-center gap-2">
             <div
-              class="w-[100px] h-[100px] flex justify-center pt-1.5 items-center rounded-full bg-[#0C73B8]"
+              class="w-[6.25rem] h-[6.25rem] flex justify-center pt-1.5 items-center rounded-full bg-[#0C73B8]"
             >
               <svg
                 width="40"
@@ -305,7 +311,7 @@
           </div>
           <div class="flex flex-col items-center gap-2">
             <div
-              class="w-[100px] h-[100px] flex justify-center pt-1 items-center rounded-full bg-[#E7A020]"
+              class="w-[6.25rem] h-[6.25rem] flex justify-center pt-1 items-center rounded-full bg-[#E7A020]"
             >
               <svg
                 width="48"
@@ -324,7 +330,28 @@
           </div>
           <div class="flex flex-col items-center gap-2">
             <div
-              class="w-[100px] h-[100px] flex justify-center pt-1.5 items-center rounded-full bg-[#42b883]"
+              class="w-[6.25rem] h-[6.25rem] flex justify-center pt-1 items-center rounded-full bg-[#007acc]"
+            >
+              <svg
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 400 400"
+                width="60"
+                height="60"
+              >
+                <path class="st0" d="M0 200V0h400v400H0" fill="#007acc" />
+                <path
+                  class="st1"
+                  fill="#fff"
+                  d="M87.7 200.7V217h52v148h36.9V217h52v-16c0-9 0-16.3-.4-16.5 0-.3-31.7-.4-70.2-.4l-70 .3v16.4l-.3-.1zM321.4 184c10.2 2.4 18 7 25 14.3 3.7 4 9.2 11 9.6 12.8 0 .6-17.3 12.3-27.8 18.8-.4.3-2-1.4-3.6-4-5.2-7.4-10.5-10.6-18.8-11.2-12-.8-20 5.5-20 16 0 3.2.6 5 1.8 7.6 2.7 5.5 7.7 8.8 23.2 15.6 28.6 12.3 41 20.4 48.5 32 8.5 13 10.4 33.4 4.7 48.7-6.4 16.7-22 28-44.3 31.7-7 1.2-23 1-30.5-.3-16-3-31.3-11-40.7-21.3-3.7-4-10.8-14.7-10.4-15.4l3.8-2.4 15-8.7 11.3-6.6 2.6 3.5c3.3 5.2 10.7 12.2 15 14.6 13 6.7 30.4 5.8 39-2 3.7-3.4 5.3-7 5.3-12 0-4.6-.7-6.7-3-10.2-3.2-4.4-9.6-8-27.6-16-20.7-8.8-29.5-14.4-37.7-23-4.7-5.2-9-13.3-11-20-1.5-5.8-2-20-.6-25.7 4.3-20 19.4-34 41-38 7-1.4 23.5-.8 30.4 1l-.2.2z"
+                />
+              </svg>
+            </div>
+            <span class="text-2xl text-medium text-[#007acc]">TS</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div
+              class="w-[6.25rem] h-[6.25rem] flex justify-center pt-1.5 items-center rounded-full bg-[#42b883]"
             >
               <svg
                 viewBox="0 -17.5 256 256"
@@ -379,6 +406,25 @@
             </div>
             <span class="text-2xl text-medium text-[#42b883]">VUE</span>
           </div>
+          <div class="flex flex-col items-center gap-2">
+            <div
+              class="w-[6.25rem] h-[6.25rem] flex justify-center items-center rounded-full bg-[#020420]"
+            >
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 512 512"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M281.44 397.667H438.32C443.326 397.667 448.118 395.908 452.453 393.427C456.789 390.946 461.258 387.831 463.76 383.533C466.262 379.236 468.002 374.36 468 369.399C467.998 364.437 466.266 359.563 463.76 355.268L357.76 172.947C355.258 168.65 352.201 165.534 347.867 163.053C343.532 160.573 337.325 158.813 332.32 158.813C327.315 158.813 322.521 160.573 318.187 163.053C313.852 165.534 310.795 168.65 308.293 172.947L281.44 219.587L227.733 129.13C225.229 124.834 222.176 120.307 217.84 117.827C213.504 115.346 208.713 115 203.707 115C198.701 115 193.909 115.346 189.573 117.827C185.238 120.307 180.771 124.834 178.267 129.13L46.8267 355.268C44.3208 359.563 44.0022 364.437 44 369.399C43.9978 374.36 44.3246 379.235 46.8267 383.533C49.3288 387.83 53.7979 390.946 58.1333 393.427C62.4688 395.908 67.2603 397.667 72.2667 397.667H171.2C210.401 397.667 238.934 380.082 258.827 346.787L306.88 263.4L332.32 219.587L410.053 352.44H306.88L281.44 397.667ZM169.787 352.44H100.533L203.707 174.36L256 263.4L221.361 323.784C208.151 345.387 193.089 352.44 169.787 352.44Z"
+                  fill="#00DC82"
+                />
+              </svg>
+            </div>
+            <span class="text-2xl text-medium text-[#00DC82]">NUXT</span>
+          </div>
         </div>
       </div>
     </div>
@@ -424,17 +470,17 @@
 
 .skills-title {
   position: relative;
-  height: 3px;
+  height: 0.1875rem;
 }
 
 .skills-title:before {
   content: '';
   display: block;
   position: absolute;
-  top: -4px;
+  top: -0.25rem;
   left: 0;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   background-color: #12f7d6;
   border-radius: 50%;
 }
@@ -443,15 +489,15 @@
   content: '';
   display: block;
   position: absolute;
-  top: -4px;
+  top: -0.25rem;
   right: 0;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   background-color: #12f7d6;
   border-radius: 50%;
 }
 
 .skills__block-web {
-  box-shadow: -10px 0 2px 0 #0c73b8;
+  box-shadow: -0.625rem 0 0.125rem 0 #0c73b8;
 }
 </style>
